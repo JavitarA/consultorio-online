@@ -1,0 +1,34 @@
+{
+  "name": "claseback",
+  "version": "0.0.1",
+  "description": "Mi proyecto de aprendizaje ",
+  "main": "index.js",
+  "scripts": {
+    "dev":"nodemon index.js",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "mongodb",
+    "angular"
+  ],
+  "author": "Alvaro Javier Corona Torres",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^1.19.0",
+    "connect-multiparty": "^2.2.0",
+    "express": "^4.17.1",
+    "express-mysql-session": "^2.1.7",
+    "jwt-simple": "^0.5.6",
+    "moment": "^2.29.1",
+    "mongoose": "^6.0.12",
+    "mongoose-pagination": "^1.0.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
