@@ -2,23 +2,18 @@ var mongoose = require('mongoose');
 
 var Schema = mongoose.Schema;
 
-var UsuariosSchema=Schema({
-    idUsuario:Integer,
+var usuariosSchema=Schema({
     nombre:String,
     apellido:String,
     email:String,
-    tipoUsuario:String,
+    documento:String,
+    numero:Number
     
-    tipoDocumento:String,
-    NoDocumento:Integer,
-    direccion:String,
-
-
-
-
     });
 
-const Usuarios = mongoose.model('usuarios',UsuariosSchema);
+const Usuarios = mongoose.model('usuarios',usuariosSchema);
+
+
 module.exports = Usuarios;
 
 

@@ -1,6 +1,9 @@
-const mongoose=require('mongoose');
+var mongoose=require('mongoose');
 
-mongoose.connect("mongodb://localhost:27017/consultoriobd", (err,res)=>{
+
+
+mongoose.connect("mongodb://localhost:27017/consultoriobd", 
+async(err,res)=>{
     if(err){
         throw err;
     }else{
@@ -9,11 +12,4 @@ mongoose.connect("mongodb://localhost:27017/consultoriobd", (err,res)=>{
 });
 
 
-/*var app = require('./app');
-var mongoose =require('./src/conexBD/conn');
-var port = 4000;
-app.listen(port, () =>{
-console.log("servidor corriendo ok")
-});*/
-
-module.exports =mongoose;
+module.exports = mongoose;
