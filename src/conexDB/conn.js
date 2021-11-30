@@ -1,6 +1,6 @@
 const mongoose=require('mongoose');
-
-
+//mongodb://localhost:27017/consultoriobd
+// mongodb+srv://Javitar:<Amaterasu1>@cluster0.b5pto.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
 mongoose
 .connect("mongodb://localhost:27017/consultoriobd", {
     useNewUrlParser:true,
